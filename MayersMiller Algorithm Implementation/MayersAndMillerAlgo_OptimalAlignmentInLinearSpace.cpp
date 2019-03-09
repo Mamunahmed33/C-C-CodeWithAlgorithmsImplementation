@@ -16,7 +16,15 @@ diff(string A, string B, int M, int N, int tb, int te){
             //insert B
         }
         else if( M == 1){
-
+            float firstMin = 0, secondMin=0;
+            if(tb < te){
+                firstMin = tb;
+            }
+            else{
+                firstMin = te;
+            }
+            firstMin += g + h * N;
+            
         }
         else{
             int i = M/2;
@@ -25,6 +33,10 @@ diff(string A, string B, int M, int N, int tb, int te){
         }
     }
 
+}
+
+float calculateMin(){
+    
 }
 
 main(){
